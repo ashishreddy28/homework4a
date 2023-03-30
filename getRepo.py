@@ -1,9 +1,9 @@
 """
-Name: Ashish Reddy Yeruva
-Cwid:20012794
-Subject: SSW - 567
-HW 04a Homework 04a
+Name:Bala Ashish Yeruva
+Subject: SSW 567
+HW 05a - Isolate External Dependencies
 """
+
 
 import requests
 import json
@@ -14,6 +14,8 @@ def getRepo(username):
         "https://api.github.com/users/" + username + "/repos")
 
     response = response.json()
+    fakeResponse = response
+    #print(fakeResponse)
 
     if len(response) == 0:
         print("No Repos Found")

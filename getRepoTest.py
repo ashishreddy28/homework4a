@@ -1,9 +1,9 @@
 """
-Name: Ashish Reddy Yeruva
-Cwid:20012794
-Subject: SSW - 567
-HW 04a Homework 04a
+Name: Bala Ashish Yeruva
+Subject: SSW 567
+HW 05a - Isolate External Dependencies
 """
+
 import unittest
 
 from getRepo import getRepo
@@ -12,6 +12,10 @@ from getRepo import getRepo
 class TestGithubAPI(unittest.TestCase):
     def testGithub1(self):
         self.assertEqual(getRepo('ashishreddy28'), True)
+
+    def testGithub2(self,fakeResponse):
+        self.assertEqual(getRepo('ashishreddy28'),fakeResponse, True)
+
 
 
 if __name__ == '__main__':
